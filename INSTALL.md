@@ -12,7 +12,7 @@ Follow below steps in order:
 
    ```
    cd ~
-   git clone https://github.com/lsants/plugin-whaticket.git
+   git clone https://github.com/LSaints/plugin-whaticket.git
    cd plugin-whaticket
    ls -l
    ```

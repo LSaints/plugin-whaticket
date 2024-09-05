@@ -1,6 +1,5 @@
 --
 -- Table structure for table `playsms_gatewayWhaticket_config`
--- Table structure for table `playsms_gatewayWhaticket_log`
 --
 
 DROP TABLE IF EXISTS `playsms_gatewayWhaticket_config`;
@@ -12,6 +11,9 @@ LOCK TABLES `playsms_gatewayWhaticket_config` WRITE;
 INSERT INTO `playsms_gatewayWhaticket_config` VALUES ('http://localhost:8080/api/messages/send', '0');
 UNLOCK TABLES;
 
+--
+-- Table structure for table `playsms_gatewayWhaticket_log`
+--
 DROP TABLE IF EXISTS `playsms_gatewayWhaticket_log`;
 CREATE TABLE `playsms_gatewayWhaticket_log` (
   `c_timestamp` BIGINT(20) NOT NULL DEFAULT '0',

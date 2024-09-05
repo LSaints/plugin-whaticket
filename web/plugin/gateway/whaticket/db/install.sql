@@ -14,6 +14,7 @@ UNLOCK TABLES;
 --
 -- Table structure for table `playsms_gatewayWhaticket_log`
 --
+
 DROP TABLE IF EXISTS `playsms_gatewayWhaticket_log`;
 CREATE TABLE `playsms_gatewayWhaticket_log` (
   `c_timestamp` BIGINT(20) NOT NULL DEFAULT '0',

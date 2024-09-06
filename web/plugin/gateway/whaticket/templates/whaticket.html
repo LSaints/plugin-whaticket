@@ -1,0 +1,14 @@
+{{ DIALOG_DISPLAY }}
+<h2>{{ Manage whaticket API }}</h2>
+<form action="index.php?app=main&inc=gateway_whaticket&op=manage_save" method="post">
+    {{ CSRF_FORM }}
+    <table class="playsms-table cellpading=1 cellspacing=2 border=0">
+        <tbody>
+            <tr><td class="label-sizer">{{ Gateway name }}</td><td>whaticket</td></tr>
+            <tr><td>{{ API URL }}</td><td><input type="text" maxlength="250" name="api_url" value="{{ api_url }}"></td></tr>
+            <tr><td>{{ Token }}</td><td><input type="text" maxlength="250" name="token" value="{{token}}"></td></tr>
+        </tbody>
+    </table>
+    <p><input type="submit" value="{{ Save }}" class="button">
+</form>
+<p>{{ BUTTON_BACK }}

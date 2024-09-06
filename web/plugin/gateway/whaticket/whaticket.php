@@ -26,26 +26,6 @@ switch(_OP_) {
             )
         );
         _p(tpl_apply($tpl));
-        // if ($err = TRUE) {
-        //     $content = _dialog();
-        // }
-        // $content .= "
-        // <h2>". _('Manage whaticket api') . "</h2>
-        // <form action=index.php?app=main&inc=gateway_whaticket&op=manage_save method=post>
-        // " . _CSRF_FORM_ . "
-        // <table class=playsms-table cellpading=1 cellspacing=2 border=0>
-        //     <tbody>
-        //         <tr><td class=label-sizer>" . _('Gateway name') . "</td><td>whaticket</td></tr>
-        //         <tr><td>" . _('API URL') . "</td><td><input type=text maxlength=250 name=api_url value=http://localhost:8443/api/messages/send></td></tr>
-        //         <tr><td>" . _('TOKEN'). "</td><td><input type=text maxlength=250 name=token></td></tr>
-        //     </tbody>
-        // </table>
-        // <p><input type=submit class=button value\"". _('Save') . "\">
-        // </form>
-        // <br/>
-        // ";
-        // $content .= _back('index.php?app=main&inc=core_gateway&op=gateway_list');
-        // _p($content);
         break;
     case "manage_save":
         $api_url = $_REQUEST['api_url'];

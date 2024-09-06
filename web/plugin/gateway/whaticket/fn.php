@@ -66,9 +66,10 @@ function whaticket_hook_sendsms($smsc, $sms_sender, $sms_footer, $sms_to, $sms_m
             _log("sent smslog_id:" . $smslog_id . " message_id:" . $c_message_id . " status:" . $c_status . " error:" . $c_error_text . " smsc:[" . $smsc . "]", 2, "whaticket_hook_sendsms");
 
             $db_query = "
-                INSERT INTO " . _DB_PREF_ . "_gatewayWhaticket_log (local_smslog_id, remote_smslog_id)
-                VALUES ('$smslog_id', '$c_message_id')";
-            $id = @dba_insert_id($db_query);
+                INSERT INTO " . _DB_PREF_ . "_gatewayWhaticket_log 
+                (local_smslog_id, remote_smslog_id)
+                VALUES (?,?)";
+            $id = dba_insert_id($db_query, [$smslog_id, $c_message_id]);
             
             if ($id) {
                 $ok = true;

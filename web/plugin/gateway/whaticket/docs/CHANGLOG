@@ -1,2 +1,5 @@
 Version 1.0
 - changelog started
+Version 1.1
+- changed the insertion method in the "_gatewayWhaticket_log" table to use prepared statements.
+- changed to use the tpl template

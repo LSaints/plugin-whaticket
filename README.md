@@ -5,7 +5,7 @@ playSMS gateway plugin for Whaticket whatsapp message gateway provider.
 Info       | Value
 ---------- | ---------------------------------
 Author     | Mateus Leandro `<lsants.dev@gmail.com>`
-Version    | 1.0
+Version    | 1.1
 Compatible | playSMS 1.1 and above
 playSMS    | https://playsms.org
 
